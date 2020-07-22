@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.mb.YTPlayer.js"></script>
+
+<style>
+#ytPlayerWrap{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+</style>
+
+</head>
+<body>
+    <div id="ytPlayerWrap">
+        <div id="ytPlayer" data-property="{
+            videoURL: 'zUa3SUmvjhI',　//動画IDまたはURLを記述
+            containment: '#ytPlayerWrap', //動画の位置(親要素)
+            autoPlay: true, //自動再生
+            loop: 1,　//ループ再生
+            mute: true, //
+            startAt: 0, //動画の再生位置
+            showControls: false, //コントロールの非表示
+            showYTLogo: false //youtubeのロゴ等を非表示
+        }"></div>
+    </div>
+<script>
+    $("#ytPlayer").YTPlayer();
+</script>
+</body>
+</html>
